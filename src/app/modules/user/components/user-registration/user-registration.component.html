@@ -1,0 +1,143 @@
+
+
+
+
+
+
+
+ 
+ <div class="">
+
+    <section class="">
+
+
+
+      
+      
+
+
+      <mat-drawer-container class="example-container"  autosize>
+        
+        <mat-drawer mode="side" opened [ngStyle]="{'width': '15%'}" #drawer class="example-sidenav">
+          
+                   
+    <div class="k-act-sidebar text-center" >
+
+
+      <div class=" text-center">
+        
+          <h5 class="">COURSES</h5>
+          
+      </div>
+
+      <ul align="center" class="list-group text-center kukku-button">
+
+
+       <li  text-center class="" (click)="getExamByCourse('')" routerLinkActive="active-link"> <a >ALL</a></li>
+       <li class=""  (click)="getExamByCourse('ba')" routerLinkActive="active-link"><a >BA</a></li>
+       <li class=""  (click)="getExamByCourse('bsc')" routerLinkActive="active-link"><a >BSC</a></li>
+       <li class="" (click)="getExamByCourse('bcom')" routerLinkActive="active-link"><a >BCOM</a></li>
+       <li class="" (click)="getExamByCourse('ma')"><a routerLinkActive="active">MA</a> </li>
+       <li class="" (click)="getExamByCourse('msc')"><a>MSC</a> </li>
+       <li class="" (click)="getExamByCourse('mcom')"><a>MCOM</a> </li>
+      
+    </ul>
+  </div>
+         
+        </mat-drawer>
+
+
+
+        <mat-drawer-content>   
+          
+          <div class="k-adex-act-co-box ">
+
+            <i class="fa-solid fa-bars p-2" mat-button (click)="drawer.toggle()"  ></i>
+          <div class="k-ad-reg-page text-center p-5">  
+
+
+
+
+            <img class="img-fluid " src="assets\img\university-solid.png" alt="">
+              <h3 class="pt-4 ">Exam Registration</h3>
+
+              
+              
+          </div>
+
+          
+        
+      <div class="p-5 mx-auto k-exam-act-Box text-center ">
+
+
+          <div class="table-responsive k-ad-insert-taBlele">
+
+            
+
+              
+
+              <table class="table  ">
+  
+
+                  <thead >
+                    
+                    <tr  [ngStyle]="{'background-color':'darkslategrey', 'color' : '#dde1dc'}" >
+                      <th scope="row">Si.No</th>
+                      <th>Tittle</th>
+                      <th>Last Date without Fine</th>
+                      <th>Last Date with Fine</th>
+                      <th>Last Date with Super Fine</th>
+                      <th>Last Date of Application </th>
+                     
+                    </tr>
+                  </thead>
+
+
+                    <tbody class="">
+                    <ng-container *ngFor="let data of exam | filter : '' : ''; let i=index; ">
+                      
+                
+                      <tr  table-bordered  *ngIf="data.co == co|| co ==''" >
+                        <td scope="row" >{{i+1}}</td>
+                        <td align="start"><a routerLink="/us/uel" >{{data.ti}}</a></td>
+                        <td  [style.color]="data.of== 'expired' ? '#940e0e':'darkslategrey;'">{{data.of }}</td>
+                        <td  [style.color]="data.wf== 'expired' ? '#940e0e':'darkslategrey;'">{{data.wf }}</td>
+                        <td  [style.color]="data.lf== 'expired' ? '#940e0e':'darkslategrey;'">{{data.lf }}</td>
+                        <td  [style.color]="data.sf== 'expired' ? '#940e0e':'darkslategrey;'">{{data.sf }}</td>
+                      </tr>
+                          
+                
+                       
+                
+                
+                
+                    </ng-container>
+                   
+                  </tbody>
+                
+                  </table>
+              
+              
+  
+          </div>
+
+    
+    
+    
+        
+    
+        
+    
+       
+      </div>
+    
+    
+    </div></mat-drawer-content>
+      </mat-drawer-container>
+      
+      
+
+    
+    
+      </section>
+</div>

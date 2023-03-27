@@ -1,0 +1,155 @@
+
+
+
+
+<div class="container-fluid">
+
+    <section class="pb-5">
+    
+        <div class=" ">
+            <div class="k-ad-reg-page text-center ">
+                <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+                <h3 class="pt-3 ">Examination Results</h3>
+            </div>
+
+            
+          
+        <div class="p-5 mx-auto k-exam-result-box text-center ">
+
+            <div class="k-bg">
+
+            <h5 class=" ">{{usresult.sem}}</h5>
+
+            <hr>
+
+            <div class="table-responsive ">
+
+                <table class="k-table-top">
+                    <tr>
+                        <td align="left"> Semester </td>
+                        <td align="left" class="ps-5">: </td>
+                        <td align="left" class="ps-2"> </td>
+                    </tr>
+                    <tr>
+                        <td align="left"> Programme </td>
+                        <td align="left" class="ps-5">: </td>
+                        <td align="left" class="ps-2">{{usresult.prg}} </td>
+                    </tr>
+                    <tr>
+                        <td align="left"> Register No </td>
+                        <td align="left" class="ps-5">: </td>
+                        <td align="left" class="ps-2">{{usresult.id}} </td>
+                    </tr>
+                    <tr>
+                        <td align="left"> Name </td>
+                        <td align="left" class="ps-5">: </td>
+                        <td align="left" class="ps-2">{{usresult.name}}</td>
+                    </tr>
+                </table>
+               
+            </div>
+
+            <hr>
+           
+        <div class="table-responsive ">
+
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>Paper Name</th>
+                        <th>Internal Mark</th>
+                        <th>External Mark</th>
+                        <th>Total Mark</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>{{usresult.sub1}}  </td>
+                        <td>{{usresult.imark1}}  </td>
+                        <td>{{usresult.emark1}}  </td>
+                        <td>{{usresult.tmark1}}  </td>
+                        <td>{{usresult.grade1}}  </td>
+                        <td style="font-weight: 500;">{{usresult.tmark1 > 39 ? 'P':'F' }}  </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td>{{usresult.sub2}}  </td>
+                        <td>{{usresult.imark2}}  </td>
+                        <td>{{usresult.emark2}}  </td>
+                        <td>{{usresult.tmark2}}  </td>
+                        <td>{{usresult.grade2}}  </td>
+                        <td style="font-weight: 500;">{{usresult.tmark2 > 39 ? 'P':'F' }}  </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td>{{usresult.sub3}}  </td>
+                        <td>{{usresult.imark3}}  </td>
+                        <td>{{usresult.emark3}}  </td>
+                        <td>{{usresult.tmark3}}  </td>
+                        <td>{{usresult.grade3}}  </td>
+                        <td style="font-weight: 500;">{{usresult.tmark3 > 39 ? 'P':'F' }}  </td>
+
+
+                    </tr>
+
+                    <tr>
+                        <td>{{usresult.sub4}}  </td>
+                        <td>{{usresult.imark4}}  </td>
+                        <td>{{usresult.emark4}}  </td>
+                        <td>{{usresult.tmark4}}  </td>
+                        <td>{{usresult.grade4}}  </td>
+                        <td style="font-weight: 500;">{{usresult.tmark4 > 39 ? 'P':'F' }}  </td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+
+           
+
+            
+
+
+            <hr>
+
+
+            <div class="pt-4">
+    
+                <p style="font-style: italic; font-size: 0.95rem;" align="left">For a pass in each course,40% mark OR E-grade is neccessary</p>
+                <hr>
+            </div>
+          
+           
+            
+                          
+
+        </div>
+
+      
+      
+          
+      
+          
+     </div>
+         
+        </div>
+      
+      
+      </div>
+      </section>
+    
+</div>

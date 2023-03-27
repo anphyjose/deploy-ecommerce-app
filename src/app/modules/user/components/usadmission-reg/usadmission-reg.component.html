@@ -1,0 +1,324 @@
+
+
+<!-- 
+<form #kukkuform='ngForm' (ngSubmit)="onSubmite(kukkuform.value)">
+    ID:<br /> <input type="text" ngModel name="id" id="id"><br /><br />
+    Name:<br /> <input type="text" ngModel name="name" id="name"><br /><br />
+    Mark:<br /> <input type="text" ngModel name="mark" id="mark"><br /><br />
+    <input class="bg-primary btn text-light " type="submit"  value="submit">
+    </form> -->
+
+
+
+
+    
+
+<div class="container-fluid">
+
+    <section class="pb-5">
+    
+        <div class=" ">
+            <div class="k-ad-reg-page text-center ">
+              <img class="img-fluid " src="assets\img\university-solid.png" alt="">
+                <h3 class="pt-3 ">Admission Registration</h3>
+            </div>
+
+            
+          
+        <div class="p-5 mx-auto k-admission-colbox text-center ">
+
+            
+        <div class="">
+
+
+<form action=""  #kukkuform='ngForm' (ngSubmit)="kukkuform.valid&&onSubmite(kukkuform.value)" >
+
+              <mat-stepper orientation="vertical" #stepper class="" color="accent">
+                <mat-step  >
+                  <div  class="example-form">
+                    <ng-template matStepLabel>Personal Details</ng-template>
+
+                  
+                    
+                    
+                      <table class="example-full-width" cellspacing="0"><tr class="row">
+                        <td class="col-md-6 col-sm-12"><mat-form-field  class="example-full-width">
+                          <mat-label>Name</mat-label>
+                          <input matInput  required  ngModel name="fname" id="fname"   pattern="[a-zA-Z ]*">
+                          <!-- <span *ngIf="requiredForm.controls['fname'].dirty && requiredForm.hasError('required' ,'fname')">Name is required</span> -->
+                          
+                        </mat-form-field></td>
+
+                        <td class="col-md-6 col-12"><mat-form-field class="example-full-width">
+                          <mat-label>Date Of Birth</mat-label>
+                          <input matInput placeholder=""  required   ngModel name="dd"  type="date">
+                        </mat-form-field></td>
+
+
+                      </tr></table>
+                        
+                    
+
+                    
+                      <table class="example-full-width" cellspacing="0"><tr class="row pr-5">
+
+                        <td class="col-md-6 col-12"><mat-form-field class="example-full-width">
+                          <mat-label>Email</mat-label>
+                          <input matInput  required ngModel name="email" id="email" type="email"  email="true" >
+                        </mat-form-field></td>
+                     
+                        
+
+                        <td class="col-md-6 col-12"><mat-form-field class="example-full-width">
+                          <mat-label>Contact Number</mat-label>
+                          <input matInput placeholder=""  required  ngModel name="no"  type="number" length="10" pattern="^((\\+91-?)|0)?[0-9]{10}$">
+
+                          
+                        </mat-form-field></td>
+                        
+                      </tr></table>
+                   
+
+
+                    </div>
+                </mat-step>
+                <mat-step >
+                  <div >
+                    <ng-template matStepLabel>Qualification Details</ng-template>
+
+                    <table class="example-full-width" cellspacing="0"><tr class="row">
+                        <td class="col-md-6 col-sm-12"><mat-form-field  class="example-full-width">
+                          <mat-label>12th Examination No</mat-label>
+                          <input matInput required ngModel name="id"  >
+                        </mat-form-field></td>
+
+
+                        <td class="col-md-6 col-12"><mat-form-field class="example-full-width">
+                          <mat-label>12th Mark </mat-label>
+                          <input matInput  required ngModel name="mark" type="number" >
+                         
+                        </mat-form-field></td>
+                      </tr></table>
+                  
+
+
+
+                    
+                    </div>
+                </mat-step>
+
+                 <mat-step >
+                  <div >
+                    <ng-template matStepLabel>Course Details</ng-template>
+
+                    <table class="example-full-width" cellspacing="0"><tr class="row">
+                        <td class="col-md-6 col-sm-12"><mat-form-field  class="example-full-width">
+                            <mat-label>First Option</mat-label>
+                            <mat-select disableRipple required  ngModel name="fo" >
+
+                                <mat-option value="None"  required >None</mat-option>
+
+                              <mat-option value="BA"  required>
+                                
+                                <mat-select required  placeholder="BA">
+                                    <mat-option value="BA Economics">BA Economics</mat-option>
+                                    <mat-option value="BA English">BA English</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option  required value="BSC">
+                                
+                                <mat-select  required  placeholder="BSC">
+                                    <mat-option value="BSC Mathematics">BSC Mathematics</mat-option>
+                                    <mat-option value="BSC Physics">BSC Physics</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option value="BCOM"  required>
+                                
+                                <mat-select  required  placeholder="BCOM">
+                                    <mat-option value="BCOM Finance">BCOM Finance</mat-option>
+                                    <mat-option value="BCOM Cooperation">BCOM Cooperation</mat-option>
+                                </mat-select>
+                            </mat-option>
+                            
+                           
+
+                              
+                            </mat-select>
+                        </mat-form-field></td>
+                        
+                     
+
+
+                     
+                        <td class="col-md-6 col-sm-12"><mat-form-field  class="example-full-width">
+                            <mat-label>Second Option</mat-label>
+                            <mat-select disableRipple  required  ngModel name="so" >
+
+                                <mat-option value="None"  required>None</mat-option>
+
+                              <mat-option value="BA">
+                                
+                                <mat-select required  placeholder="BA">
+                                    <mat-option value="BA Economics">BA Economics</mat-option>
+                                    <mat-option value="BA English">BA English</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option value="BSC"  required>
+                                
+                                <mat-select required  placeholder="BSC" >
+                                    <mat-option value="BSC Mathematics">BSC Mathematics</mat-option>
+                                    <mat-option value="BSC Physics">BSC Physics</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option value="BCOM"  required>
+                                
+                                <mat-select  required  placeholder="BCOM">
+                                    <mat-option value="BCOM Finance">BCOM Finance</mat-option>
+                                    <mat-option value="BCOM Cooperation">BCOM Cooperation</mat-option>
+                                </mat-select>
+                            </mat-option>
+                            
+                           
+
+                              
+                            </mat-select>
+                        </mat-form-field></td>
+                        
+                    
+                    
+                    
+                    
+                    
+                    </tr>
+
+                    <tr class="row">
+                        <td class="col-md-6 col-sm-12"><mat-form-field  class="example-full-width">
+                            <mat-label>Third Option</mat-label>
+                            <mat-select disableRipple  required  ngModel name="to" >
+
+                                <mat-option value="None"  required>None</mat-option>
+
+                              <mat-option value="BA"  required>
+                                
+                                <mat-select required  placeholder="BA">
+                                    <mat-option value="BA Economics">BA Economics</mat-option>
+                                    <mat-option value="BA English">BA English</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option value="BSC"  required>
+                                
+                                <mat-select  required  placeholder="BSC">
+                                    <mat-option value="BSC Mathematics">BSC Mathematics</mat-option>
+                                    <mat-option value="BSC Physics">BSC Physics</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option value="BCOM"  required>
+                                
+                                <mat-select required  placeholder="BCOM">
+                                    <mat-option value="BCOM Finance">BCOM Finance</mat-option>
+                                    <mat-option value="BCOM Cooperation">BCOM Cooperation</mat-option>
+                                </mat-select>
+                            </mat-option>
+                            
+                           
+
+                              
+                            </mat-select>
+                        </mat-form-field></td>
+                        
+                     
+
+
+                     
+                        <td class="col-md-6 col-sm-12"><mat-form-field  class="example-full-width">
+                            <mat-label>Fourth Option</mat-label>
+                            <mat-select disableRipple  required  ngModel name="lo" >
+
+                                <mat-option value="None"  required>None</mat-option>
+
+                              <mat-option value="BA"  required>
+                                
+                                <mat-select required  placeholder="BA"  ngModel name="lo">
+                                    <mat-option value="BA Economics">BA Economics</mat-option>
+                                    <mat-option value="BA English">BA English</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option value="BSC"  required>
+                                
+                                <mat-select required  placeholder="BSC"  ngModel name="lo">
+                                    <mat-option value="BSC Mathematics">BSC Mathematics</mat-option>
+                                    <mat-option value="BSC Physics">BSC Physics</mat-option>
+                                </mat-select>
+                            </mat-option>
+
+                            <mat-option value="BCOM"  required>
+                                
+                                <mat-select  required  placeholder="BCOM"  ngModel name="lo">
+                                    <mat-option value="BCOM Finance">BCOM Finance</mat-option>
+                                    <mat-option value="BCOM Cooperation">BCOM Cooperation</mat-option>
+                                </mat-select>
+                            </mat-option>
+                            
+                           
+
+                              
+                            </mat-select>
+                        </mat-form-field></td>
+                        
+                    
+                    
+                    
+                    
+                    
+                    </tr>
+
+                    
+                    </table>
+                   
+                 
+                  </div>
+                </mat-step>
+                
+
+
+
+
+                <mat-step>
+                  <ng-template matStepLabel>Done</ng-template>
+                 
+                  <div class="pt-3">
+                   
+                    <button  class=" btn kukku-use-adReg-btn"  type="submit" [disabled]="!kukkuform.valid">Register</button> 
+                  </div>
+                </mat-step>
+              </mat-stepper>
+
+              
+              
+            
+
+            </form>
+
+
+        </div>
+          
+      
+      
+          
+      
+          
+      
+         
+        </div>
+      
+      
+      </div>
+      </section>
+</div>

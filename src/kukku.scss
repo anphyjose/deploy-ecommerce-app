@@ -1,0 +1,13 @@
+@include mat.core();
+
+
+
+
+
+
+@include mat.all-component-themes($promain-theme);
+
+.mat-mdc-tab-body-content {
+    height: 0;
+    overflow: hidden;
+}

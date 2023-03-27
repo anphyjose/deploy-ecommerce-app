@@ -1,0 +1,71 @@
+
+
+
+
+<div class="container-fluid">
+
+
+
+    <div class="row   kukku-adport-box ">
+
+
+        <div class="kukku-adport-content card text-center">
+
+            <a class="navbar-brand  p-4 pt-5" href="#"> <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px"></a>
+
+            <h1 class="kukku-adport-h1">ADMIN PORTAL</h1>
+
+            <div class="row pb-5">
+
+
+                <div class="col-md-6 kukku-adport-pdiv">
+
+                    <p class="kukku-adport-para pt-5">
+                        A digital platform for the University Departments to manage the data on Infrastructural details and teachers profile. 
+                        Basic Institution details, NAAC rating details, College Officer details, Non-teaching staff details are collected from the Department.
+                        Data collection from Department Basic Details, Details, Faculty Details, Other Officer Details, Extra Curricular 
+                        Activity Details and Infrastructural Details.
+
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 kukku-adport-pdiv">
+
+                    <div class="kukku-adport-login pt-5">
+
+                        <form   [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                            <div class=" kukku-adport-login-div">
+
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email" formControlName="email"
+                              name="email">
+                             
+                            </div>
+                            <div class="mb-3 kukku-adport-login-div kukku-adport-login-div-pass">
+                             
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" [type]="hide ? 'password' : 'text'"  formControlName="password" name="password">
+                              <span class="" id="inputGroupPrepend3"><button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                              </button></span>
+                              
+                              
+                            </div>
+
+                            <div class="pt-3 " style="float: left;"> 
+                                <button type="submit" class="btn kukku-adport-login-btn mb-3 " >Login</button>
+                            </div>
+                           
+                            
+                          </form>
+                    </div>
+                     
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>

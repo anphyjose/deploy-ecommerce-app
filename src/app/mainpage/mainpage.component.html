@@ -1,0 +1,301 @@
+
+
+
+<div class="">
+
+
+
+
+    
+    
+    <!-- carousel -->
+    
+    <section  class=" ">
+    
+    
+      <div class=" text-white  " >
+    
+        <div class="" style="cursor: pointer;">
+    
+          
+       
+        
+        <ngb-carousel
+	#carousel
+	[interval]="5000"
+	[pauseOnHover]="pauseOnHover"
+	[pauseOnFocus]="pauseOnFocus"
+	(slide)="onSlide($event)"
+  >
+	<ng-template ngbSlide *ngFor="let img of images; index as i">
+		
+		
+			<div class="picsum-img-wrapper">
+				<img class="img-fluid" [src]="img" width="100%" height="auto">
+			</div>
+		
+	</ng-template>
+</ngb-carousel>
+    
+</div>
+        
+        
+      </div>
+    
+    
+    
+    </section>
+
+     <!-- marquee -->
+
+    <section>
+
+      <div class="pt-3 mx-auto">
+
+      
+      
+
+        <p class="kukku-marquee">
+        <marquee behavior="scroll" direction="left" onmouseover="this.stop()" onmouseout="this.start()"  class="">
+        
+        <a *ngFor="let data of exam" routerLink="/us/usn">{{data.ti}}</a>
+        
+        
+        
+        
+          
+        </marquee>
+      </p>
+        
+      
+
+    </div>
+    </section>
+    
+    <!-- image -->
+    
+    
+    <!-- content -->
+    
+    <section class="">
+    
+      <div class="  k-colbox ">
+        
+      <div class="row justify-content-center fhw p-5 mx-auto">
+    
+        
+    
+        <div class="col-md-3 text-center">
+    
+          <figure class="figure">
+            <figcaption class="figure-caption"><a routerLink="/am">ADMISSION </a></figcaption>
+            <a  routerLink="/am"><img src="assets\img\admission.png" class="figure-img img-fluid rounded  p-3" alt="..."></a>
+            <figcaption class="figure-caption"><a routerLink="/am"> Directorate of Admission </a></figcaption>
+          </figure>
+    
+        </div>
+    
+        <div class="col-md-3 text-center">
+    
+          <figure class="figure ">
+            <figcaption class="figure-caption"><a  routerLink="/us/usn">NOTIFICATION</a> </figcaption>
+            <a routerLink="/us/usn"><img src="assets\img\notification.png" class="figure-img img-fluid rounded p-3" alt="..."></a>
+            <figcaption class="figure-caption"><a  routerLink="/us/usn"> Notification Update </a></figcaption>
+          </figure>
+    
+        </div>
+    
+        <div class="col-md-3 text-center">
+    
+          <figure class="figure">
+            <figcaption class="figure-caption"><a routerLink="/us/uel">EXAMINATION </a></figcaption>
+            <a routerLink="/us/uel" ><img src="assets\img\examination.png" class="figure-img img-fluid rounded  p-3" alt="..."></a>
+            <figcaption class="figure-caption"><a routerLink="/us/uel"> Registration Portal </a></figcaption>
+          </figure>
+    
+        </div>
+        <div class="col-md-3 text-center">
+    
+          <figure class="figure">
+            <figcaption class="figure-caption"> <a routerLink="/us/url">RESULTS </a></figcaption>
+            <a routerLink="/us/url"> <img src="assets\img\result.png" class="figure-img img-fluid rounded  p-3" alt="..."></a>
+            <figcaption class="figure-caption"> <a routerLink="/us/url"> Examination Results  </a> </figcaption>
+          </figure>
+    
+        </div>
+    
+       
+      </div>
+    
+    
+    </div>
+    </section>
+    
+    
+    
+    <!--experience -->
+    <section >
+		
+      <div class=" pt-3 pb-3" style="background-color: #faf9ff;">
+  
+       
+        
+        <h4 class=" text-center kukku-nhd p-2" style="background-color: darkslategrey; color: #faf9ff; font-family: Roboto;">WELCOME TO NAISSARGGIKA COLLEGE</h4>
+  
+        <br>
+  
+        <div class="row">
+  
+          <div class="col-md-1"></div>
+  
+          <div class="col-md-5 p-1">
+  
+            <div class="shadow rounded p-2 bg-light">
+  
+            <div>
+              <i class="fa fa-graduation-cap kukku-fa ps-1" ></i> <span class="ps-4 kukku-academic">100 years of service</span>
+            </div>
+  
+            <div class="d-flex ps-4" style="height:100px; color: darkred;">
+            <div class="vr"></div><span class="ps-5 pt-3 ">
+             </span>
+            
+            </div>
+  
+            <div class="">
+              <i class="fa fa-graduation-cap kukku-fa ps-1" ></i> <span class="ps-4 kukku-academic">College with Potential for Excellence (UGC)</span>
+            </div>
+            <div class="d-flex ps-4" style="height: 100px; color: darkred;">
+            <div class="vr"></div><span class="ps-5 pt-3 kukku-academic"> 
+              </span>
+            
+            </div>
+  
+            <div class="">
+              <i class="fa fa-graduation-cap kukku-fa ps-1" ></i> <span class="ps-4 kukku-academic">NAAC Mentor College (UGC Paramarsh Scheme)</span>
+            </div>
+            <div class="d-flex ps-4" style="height:100px; color: darkred;">
+            <div class="vr"></div>
+            </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-md-5 p-1">
+            <div class="shadow rounded p-2 bg-light">
+  
+            <div>
+              <i class="fa fa-graduation-cap kukku-fa ps-1" ></i> <span class="ps-4 kukku-academic">4 Stars for Innovation from IIC, MHRD, New Delhi</span>
+            </div>
+  
+            <div class="d-flex ps-4" style="height: 100px; color: darkred;">
+            <div class="vr"></div>
+            
+            </div>
+  
+            <div class="">
+              <i class="fa fa-graduation-cap kukku-fa ps-1" ></i> <span class="ps-4 kukku-academic">SES REC Institution, Ministry of Education, India.</span>
+            </div>
+            <div class="d-flex ps-4" style="height: 100px; color: darkred;">
+            <div class="vr"></div>
+            
+            </div>
+  
+            <div class="">
+              <i class="fa fa-graduation-cap kukku-fa ps-1" ></i><span class="ps-4 kukku-academic">NIRF INDIA Ranking: 100</span>
+            </div>
+            <div class="d-flex ps-4" style="height: 100px; color: darkred;">
+            <div class="vr"></div>
+            
+            </div>
+  
+            
+  </div>
+          </div>
+          
+        </div>
+        <br>
+        <div class=" text-center kukku-nhd p-2" style="background-color: darkslategrey; color: #faf9ff; height: 2.5rem;"></div>
+        
+  
+      </div>
+    </section>
+
+    <!-- portal -->
+
+    
+    
+    <section>
+    
+      <div class=" pb-3">
+    
+        <div class="row justify-content-center p-3">
+    
+          <div class="p-3 k-colport">
+    
+            <div class="row ">
+            
+    
+          <div class="col-md-6">
+            <a href="" class="" routerLink="/uslog"><img class="img-fluid" src="assets\img\student.jpg" alt=""></a>
+          </div>
+    
+          <div class="col-md-6">
+            <a href=""  routerLink="/adlog" class=""><img class="img-fluid" src="assets\img\collegeport.jpg" alt=""></a>
+          </div>
+        </div>
+        </div>
+          
+        </div>
+    
+    
+    
+    
+      </div>
+    </section>
+
+   
+
+  <!-- gallery -->
+
+  <section >
+<div style="background-color:  #eeefef;">
+
+    <h4 class=" text-center kukku-nhd pt-5" style=" color: #1d262d;; font-size: 1.5rem;">Our Gallery</h4>
+    <div style="width: 100%; height: auto; text-align:center;margin:0; padding:0;" class=" p-5">
+      <div>
+      <ng-image-slider #nav
+        [images]="imageObject"
+        [infinite]="false"
+        [autoSlide]="1"
+        [imageSize]="{width: '25%', height: 200}"
+        slideImage="1"></ng-image-slider>
+    </div>
+    </div>
+  </div>
+  </section>
+    
+  
+    
+   <!-- logo -->
+    
+   <section>
+
+    <div class=" pb-5 pt-5">
+      <div class="k-addetails text-center ">
+        <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+         
+      </div>
+    
+    
+    </div>
+
+  </section>
+    
+  
+
+
+
+
+</div>

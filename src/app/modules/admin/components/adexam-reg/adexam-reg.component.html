@@ -1,0 +1,117 @@
+
+
+
+
+
+
+ 
+ <div class="">
+
+    <section class="">
+
+
+
+      
+      
+
+
+
+
+
+       
+          
+          <div class="k-adex-act-co-box ">
+
+            
+          <div class="k-ad-reg-page text-center p-5">  
+
+
+
+
+            <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+              <h3 class="pt-4 ">Exam Registration</h3>
+
+              
+              
+          </div>
+
+          
+        
+      <div class="p-5 mx-auto k-exam-act-Box text-center ">
+
+
+          <div class="table-responsive k-ad-insert-taBlele">
+
+            
+
+              
+
+              <table class="table  k-ad-act-tb ">
+  
+
+                  <thead >
+                    
+                    <tr  [ngStyle]="{'background-color':'darkslategrey', 'color' : '#dde1dc'}" >
+                      <th scope="row">Si.No</th>
+                      <th>Reg No</th>
+                      <th>Name</th>
+                      <th>Date Of Birth</th>
+                      <th>Department</th>
+                      <th>Examination Code</th>
+                      <th>Delete</th>
+                     
+
+                     
+                    </tr>
+                  </thead>
+
+
+                    <tbody class="">
+                    <ng-container *ngFor="let data of examInfo ; let i=index; ">
+                      
+                
+                      <tr  table-bordered   >
+                        <td scope="row" >{{i+1}}</td>
+                        <td>{{data.id}}</td>
+                        <td>{{data.name}}</td>
+                        <td>{{data.dob}}</td>
+                        <td>{{data.dep}}</td>
+                        <td align="start">{{data.code}}</td>
+                        <td><button class="btn" type="submit" (click)="deleteExInfo(data.id)" ><i class="fa-solid fa-trash k-delete "  ></i></button></td>
+                        
+                          </tr>
+                          
+                
+                       
+                
+                
+                
+                    </ng-container>
+                   
+                  </tbody>
+                
+                  </table>
+              
+              
+  
+          </div>
+
+    
+    
+    
+        
+    
+        
+    
+       
+      </div>
+    
+    
+    </div>
+      
+      
+
+    
+    
+      </section>
+</div>

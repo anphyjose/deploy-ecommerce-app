@@ -1,0 +1,92 @@
+
+
+ <div class="text-center kukku-usadm">
+
+             
+
+    <div class="kukku-usadm-login pt-3">
+
+        <h3 class="pb-3" style="color: #0e5c05;">REGISTERED APPLICANT?</h3>
+        <h5 class="pb-5" style="color: #465844;">LOGIN HERE</h5>
+
+        <form>
+            <div class=" kukku-usadm-login-div">
+
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+             
+            </div>
+            <div class="mb-3 kukku-usadm-login-div kukku-usadm-login-div-pass">
+             
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" [type]="hide ? 'password' : 'text'">
+              <span class="" id="inputGroupPrepend3"><button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button></span>
+              
+              
+            </div>
+
+            <div class="pt-3 " style="float: left;"> 
+           
+                <button type="submit" class="btn kukku-adport-login-btn mb-3 "  routerLink="/us/ur">Login</button>
+            </div>
+           
+            
+          </form>
+    </div>
+
+</div>
+
+<div class="text-center kukku-usadm">
+
+             
+
+    <div class=" pt-3  ">
+
+        <h3 class="pb-3" style="color: #0e5c05;">NEW APPLICANT? </h3>
+        <h5 class="pb-3" style="color: #465844;">APPLY ONLINE </h5>
+      
+        <div class="card-body text-center kukku-usadam-table">
+
+            <table class="table table-borderless kukku-usadam-tabledata  text-center" align="center"  >
+
+                <tr>
+                    <td align="right" class="p-0">
+                        <span class="material-icons m-r-5 text-success">done_outline</span>
+                    </td>
+
+                    <td align="left" class="p-0" > Register with your email ID &amp; Phone Number </td>
+                </tr>
+
+                <tr>
+                    <td align="right"  class="p-0">
+                        <span class="material-icons m-r-5 text-success">done_outline</span>
+                    </td>
+                    
+                    <td align="left" class="p-0" >Login with the credentials which is sent to your Email/SMS
+                    </td>
+                </tr>
+
+                <tr><td align="right"class="p-0">
+                    <span class="material-icons m-r-5 text-success">done_outline</span>
+                </td>
+                <td align="left" class="p-0" >Login with the credentials which is sent to your Email/SMS
+                </td>
+                </tr>
+
+                <tr><td align="right" class="p-0">
+                    <span class="material-icons m-r-5 text-success">done_outline</span>
+                </td>
+                <td align="left" class="p-0" >Confirm and submit the form</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="left" class="p-3">
+                        <button type="submit" class="btn kukku-adport-login-btn "  routerLink="/us/ur">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+       
+    </div>
+
+</div>  

@@ -1,0 +1,60 @@
+
+
+
+
+
+
+<div class="container-fluid">
+
+
+
+    <div class="row   kukku-adport-box ">
+
+       
+
+
+        <div class="kukku-adport-content card text-center">
+
+            <a class="navbar-brand  p-4 pt-5" href="#"> <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px"></a>
+
+            <h1 class="kukku-adport-h1">Trouble Logging In?</h1>
+
+            <div class="row pb-5">
+
+
+               
+
+                <div class=" kukku-adport-pdiv">
+
+                    <div class="kukku-adport-login pt-5">
+
+                        <form  [formGroup]="login" (ngSubmit)="kukkulodIn(login)">
+                            <div class=" kukku-adport-login-div">
+
+                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Roll No" formControlName="id"[(ngModel)]="loginId">
+                             
+                            </div>
+                           
+
+                            <div class="pt-3 " > 
+                               
+                                <button type="submit" class="btn kukku-adport-login-btn mb-3 " >Send</button>
+                                
+                            </div>
+                            
+                           
+                            
+                          </form>
+                          
+                    </div>
+                    
+                     
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+   
+
+    <div class="container-fluid">
+
+        <section class="pb-5">
+        
+            <div class=" ">
+                <div class="k-ad-reg-page text-center ">
+                    <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+                    <h3 class="pt-3 " style="color: #324807;">Students Details</h3>
+                </div>
+    
+                
+              
+            <div class="p-5 mx-auto k-admission-colbox text-center ">
+  
+              
+    
+                
+            <div class="table-responsive ">
+
+
+
+                <form  #kukkuform='ngForm' (ngSubmit)="onSubmite(kukkuform.value)">
+
+                    <br>
+                    <br>
+
+
+                    <div class="k-form-si">
+                    <input type="text" placeholder="Register No"  disabled >
+                    <input class="k-input-stInfo"  type="text" placeholder="Register No" required  ngModel name="id">
+                    </div>
+                    <br>
+
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Student Name"  disabled >
+                        <input class="k-input-stInfo"  type="text" placeholder="Student Name"  required  ngModel name="name">
+                    </div>
+                    <br>
+
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Date Of Birth"  disabled >
+                        <input class="k-input-stInfo"  type="text" placeholder="Date Of Birth"  required  ngModel name="dob">
+                    </div>
+                    <br>
+
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Email"  disabled >
+                        <input class="k-input-stInfo"  type="email" placeholder="Email Address" required  ngModel name="email">
+                    </div>
+                    <br>
+
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Contact No"  disabled >
+                        <input class="k-input-stInfo"  type="text" placeholder="Mobile No" required  ngModel name="phno">
+                    </div>
+                    <br>
+
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Programme"  disabled >
+                        <select class="k-input-stInfo" aria-label="Default select example" required  ngModel name="sub" id="code" aria-placeholder="choose">
+
+                            <option value=""  disabled selected >Programme</option>
+      
+                            <option value="BA">BA</option>
+                            <option value="BSC">BSC </option>
+                            <option value="BCOM">BCOM </option>
+                           
+                          </select>
+                    </div>
+                    <br>
+
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Attendance"  disabled >
+                        <input class="k-input-stInfo"  type="text" placeholder="Attendance" required  ngModel name="atten">
+                    </div>
+                    <br>
+
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Internal Mark"  disabled >
+                        <input class="k-input-stInfo"  type="text" placeholder="Internal Mark" required  ngModel name="imark">
+                    </div>
+
+                    <br>
+
+                    
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Photograph"  disabled >
+                        <input class="k-input-stInfo"  type="text" placeholder="Photograph" required  ngModel name="img" [(ngModel)]="lj">
+                    </div>
+
+                    <br>
+
+                    
+                    <div class="k-form-si">
+                        <input type="text" placeholder="Password"  disabled >
+                        <input class="k-input-stInfo"  type="text" placeholder="Password" required  ngModel name="pwd" >
+                    </div>
+
+                    
+
+                    <br>
+                    <br>
+                   
+
+                    
+                    
+                    <div class="pt-3 text-center" align="center" >
+                     
+                        <button  class=" btn kukku-usreg-ex-btn"  type="submit" (click)="kk()">Register</button> 
+                      </div>
+
+
+                    
+                  </form>
+    
+   
+                     
+    
+            </div>
+              
+          
+          
+              
+          
+              
+          
+             
+            </div>
+          
+          
+          </div>
+          </section>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,198 @@
+
+
+
+
+
+
+ 
+ <div class="">
+
+    <section class="">
+
+
+
+      
+      
+
+
+
+
+
+       
+          
+          <div class="k-adex-act-co-box ">
+
+            
+          <div class="k-ad-reg-page text-center p-5">  
+
+
+
+
+            <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+              <h3 class="pt-4 " style="color: #640848;">Exam Results</h3>
+
+              
+              
+          </div>
+
+          
+        
+      <div class="p-5 mx-auto k-exam-act-Box text-center ">
+
+
+          <div class="table-responsive k-ad-insert-taBlele">
+
+            
+
+              
+
+              <table class="table  k-ad-act-tb ">
+  
+
+                  <thead >
+
+                    <tr [ngStyle]="{'background-color':'#640848', 'color' : '#dde1dc'}">
+                        <th colspan="5">
+                        </th>
+                        <th colspan="4">
+                            Paper-I
+                        </th>
+                        <th colspan="4">
+                            Paper-II
+                        </th>
+                        <th colspan="4">
+                            Paper-III
+                        </th>
+                        <th colspan="4">
+                            Paper-IV
+                        </th>
+                        <th colspan="2">
+                            
+                        </th>
+                    </tr>
+                    
+                    <tr  [ngStyle]="{'background-color':'#640848', 'color' : '#dde1dc'}" >
+                     
+                      <th>Reg No</th>
+                      <th>Name</th>
+                      <th>DOB</th>
+                      <th>Programmee</th>
+                      <th>Examination Code</th>
+                      <th >Internal Mark</th> 
+                      <th >External Mark</th>
+                      <th >Total Mark</th>
+                      <th > Grade </th>
+                      <th >Internal Mark</th> 
+                      <th >External Mark</th>
+                      <th >Total Mark</th>
+                      <th > Grade </th>
+                      <th >Internal Mark</th> 
+                      <th >External Mark</th>
+                      <th >Total Mark</th>
+                      <th > Grade </th>
+                      <th >Internal Mark</th> 
+                      <th >External Mark</th>
+                      <th >Total Mark</th>
+                      <th > Grade </th>
+                      <th >Delete </th>
+                      <th >Edit</th>
+                      
+                     
+                    
+                     
+
+                     
+                    </tr>
+                  </thead>
+
+
+                    <tbody class="">
+                    <ng-container *ngFor="let data of examresult ; let i=index; ">
+
+                        <tr >
+                            <td colspan="5">
+                                
+                            </td>
+                            <td colspan="4">
+                                {{data.sub1 }}
+                            </td>
+                            <td colspan="4">
+                                {{data.sub2}}
+                            </td>
+                            <td colspan="4">
+                                {{data.sub3}}
+                            </td>
+                            <td colspan="4">
+                                {{data.sub4}}
+                            </td>
+                        </tr>
+                      
+                        <tr   >
+                            
+                            <td>{{data.id}}</td>
+                            <td>{{data.name}}</td>
+                            <td>{{data.dob}}</td>
+                            <td>{{data.prg}}</td>
+                            <td>{{data.sem}}</td>
+
+                            <td>{{data.imark1}}</td>
+                            <td>{{data.emark1}}</td>
+                            <td>{{data.tmark1}}</td>
+                            <td>{{data.grade1}}</td>
+
+                            <td>{{data.imark2}}</td>
+                            <td>{{data.emark2}}</td>
+                            <td>{{data.tmark2}}</td>
+                            <td>{{data.grade2}}</td>
+
+                            <td>{{data.imark3}}</td>
+                            <td>{{data.emark3}}</td>
+                            <td>{{data.tmark3}}</td>
+                            <td>{{data.grade3}}</td>
+
+                            <td>{{data.imark4}}</td>
+                            <td>{{data.emark4}}</td>
+                            <td>{{data.tmark4}}</td>
+                            <td>{{data.grade4}}</td>
+                            
+                            <td><button class="btn" type="submit" (click)="deleteResults(data.id)" ><i class="fa-solid fa-trash k-delete "  ></i></button></td>
+                            <td><button class="btn" type="submit" routerLink="/ad/arse/{{data.id}}"><i class="fa-solid fa-file-pen  k-delete"  ></i></button></td>
+
+
+
+                           
+                          
+                
+                       
+                
+                
+                
+                    </ng-container>
+                   
+                  </tbody>
+                
+                  </table>
+              
+              
+  
+          </div>
+
+    
+    
+    
+        
+    
+        
+    
+       
+      </div>
+    
+    
+    </div>
+      
+      
+
+    
+    
+      </section>
+</div>

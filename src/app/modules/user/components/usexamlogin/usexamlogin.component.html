@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+<div class="container-fluid">
+
+
+
+    <div class="row   kukku-adport-box ">
+
+      <div class="navbar-brand  p-4 " href="#"> <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px"></div>
+
+
+        <div class="kukku-adport-content card text-center h-auto">
+
+           
+
+            <h3 class="kukku-adport-h1 p-5">STUDENTS LOGIN</h3>
+
+            <div class="row p-5">
+
+              <div class="col-lg-6 kukku-adport-pdiv">
+
+                <div class="kukku-adport-login pt-5">
+
+
+                    <div class=" kukku-form">
+        
+                        <form z [formGroup]="login" (ngSubmit)="kukkulodIn(login)">
+                          <div  align="left" class="title">Login</div>
+                          <div class="input-box underline">
+                            <input type="text" placeholder="Enter Your Name" required formControlName="name">
+                            <div class="underline"></div>
+                          </div>
+                          <div class="input-box k-eye-btn">
+                      
+                            <input type="password" placeholder="Enter Your Roll No" required  [type]="hide ? 'password' : 'text'" formControlName="id" [(ngModel)]="loginId">
+                            
+                            <span class=""><button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                              </button></span>
+                          
+                            <div class="underline"></div>
+                          </div>
+                          <div class="input-box button">
+                            <input type="submit" name="" value="Continue">
+                          </div>
+                        </form>
+                    
+                        
+                    
+                    </div>
+
+                    <!-- <form [formGroup]="login" (ngSubmit)="kukkulodIn(login)">
+                        <div class=" kukku-usadm-login-div pt-3">
+            
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email"  formControlName="name">
+                         
+                        </div>
+                        <div class="mb-3 kukku-usadm-login-div kukku-usadm-login-div-pass">
+                         
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" [type]="hide ? 'password' : 'text'" formControlName="id" [(ngModel)]="loginId">
+                          <span class="" id="inputGroupPrepend3"><button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                          </button></span>
+                          
+                          
+                        </div>
+            
+                        <div class="pt-3 " style="float: left;"> 
+                       
+                            <button type="submit" class="btn kukku-adport-login-btn mb-3 " >Login</button>
+                        </div>
+                       
+                        
+                      </form> -->
+                </div>
+                 
+            </div>
+ 
+
+                <div class="col-lg-6 kukku-adport-pdivp">
+
+                    <img class="img-fluid " src="assets\img\studentLog.jpg" alt="" >
+                </div>
+
+               
+            </div>
+
+
+            <div class="mx-auto p-5 " >
+
+
+
+                
+                  
+              </div>
+            
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+
+
+   
+
+    <div class="container-fluid">
+
+        <section class="pb-5">
+        
+            <div class=" ">
+                <div class="k-ad-reg-page text-center ">
+                  <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+                    <h3 class="pt-3 " style="color: #324807;">Students Details</h3>
+                </div>
+    
+                
+              
+            <div class="p-5 mx-auto k-admission-colbox text-center ">
+  
+              
+    
+                
+            <div class="table-responsive ">
+    
+                <table class="table  k-ad-act-tb ">
+  
+
+                    <thead >
+                      
+                      <tr  [ngStyle]="{'background-color':'#324807', 'color' : '#dde1dc' , 'border' : '1px solid rgb(50, 72, 7)'}" >
+                        <th scope="row">Si.No</th>
+                        <th>Registration No</th>
+                        <th>Name</th>
+                        <th>Date Of Birth</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Programme</th>
+                        <th>Attendance</th>
+                        <th>Internal Mark</th>
+                        <th>Photograph</th>
+                        <th>Password</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                        
+  
+                       
+                      </tr>
+                    </thead>
+  
+  
+                      <tbody class="">
+
+                       
+                            <ng-container *ngFor="let Data of stds; let i=index;">
+
+                            <tr>
+                                <td>{{i+1}}</td>
+                                <td>{{Data.id}}</td>
+                                <td>{{Data.name}}</td>
+                                <td>{{Data.dob}}</td>
+                                <td>{{Data.email}}</td>
+                                <td>{{Data.phno}}</td>
+                                <td>{{Data.sub}}</td>
+                                <td>{{Data.atten}}</td>
+                                <td>{{Data.imark}}</td>
+                                <td> <img [src]="Data.img" ></td>
+                                <td>{{Data.pwd}}</td>
+                                <td> <button class="btn" type="submit" (click)="deleterStudentInfo(Data.id)"><i class="fa-solid fa-trash k-delete "  ></i></button></td>
+                                <td><button class="btn" type="submit" routerLink="/ad/adse/{{Data.id}}"><i class="fa-solid fa-file-pen  k-delete"  ></i></button></td>
+
+
+
+                                
+                             </tr>
+                            </ng-container>
+                       
+                     
+                     
+                    </tbody>
+                  
+                    </table>
+                   
+    
+            </div>
+              
+          
+          
+              
+          
+              
+          
+             
+            </div>
+          
+          
+          </div>
+          </section>
+    </div>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

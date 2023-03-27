@@ -1,0 +1,394 @@
+   
+
+    <div class="container-fluid">
+
+        <section class="pb-5">
+        
+            <div class=" ">
+                <div class="k-ad-reg-page text-center ">
+                  <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+                    <h3 class="pt-3 "  style="color: #640848;">Exam Results</h3>
+                </div>
+    
+                
+              
+            <div class="p-5 mx-auto k-admission-colbox text-center ">
+  
+              
+    
+                
+            <div class="table-responsive ">
+    
+   
+              <form action=""  #kukkuform='ngForm' (ngSubmit)="kukkuform.valid && onSubmite(kukkuform.value)">
+  
+              <table class="table">
+               
+                <tbody class="k-table-uex-reg">
+                  <br>
+                  <br>
+                  <tr>
+                  
+                    <td align="start">Registration No</td>
+                    <td align="start">:</td>
+                    <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Registration No" required  ngModel name="id" id="id"></td>
+                   
+                  </tr>
+                  <br>
+  
+                  <tr>
+                  
+                    <td align="start">Name</td>
+                    <td align="start">:</td>
+                    <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" required  ngModel name="name" id="name"></td>
+                   
+                  </tr>
+                  <br>
+
+                  <tr>
+                  
+                    <td align="start">Date Of Birth </td>
+                    <td align="start">:</td>
+                    <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Date Of Birth" required  ngModel name="dob" id="dob"></td>
+                   
+                  </tr>
+                  
+                  <br>
+  
+                  <tr>
+                
+                    <td align="start">Programme </td>
+                    <td align="start">:</td>
+                    <td><select class=" form-control form-select" aria-label="Default select example" required  ngModel name="prg" id="code" aria-placeholder="choose" [(ngModel)]="prog" (change)="setSub()">
+
+                      <option value="" disabled selected>Programme</option>
+
+                      <option value="BA">BA</option>
+                      <option value="BSC">BSC </option>
+                      <option value="BCOM">BCOM </option>
+                     
+                    </select></td>
+                   
+                  </tr>
+                  <br>
+
+                  
+                      
+                      <tr>
+                
+                    <td align="start">Examination Code</td>
+                    <td align="start">:</td>
+                    <td><select class=" form-control form-select" aria-label="Default select example" required  ngModel name="sem" id="code" >
+           
+                      <option >Choose</option>
+                      <option    *ngFor="let data of exam" >{{data.ti}}</option>
+                     
+                    </select></td>
+                   
+                 
+                     
+                   
+                   
+                  </tr>
+
+                  <br>
+
+                  
+                  <br>
+
+                  <tr>
+                
+                    <td align="start">Subject I </td>
+                    <td align="start">:</td>
+                    <td><select  class="form-control form-select" aria-label="Default select example" required  ngModel name="sub1" id="code" >
+
+
+                    <option value="" disabled selected>Select</option> 
+             
+                    <option *ngFor="let s of sub">{{s}}</option>
+                    
+                     
+                     
+                    </select></td>
+                   
+                  </tr>
+  
+                  <br>
+  
+                  <tr>
+                  
+                    <td align="start">1Internal Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Internal Mark" required  ngModel name="imark1" id="dep"  [(ngModel)]="internal1"></td>
+                   
+                  </tr>
+  
+                  <br>
+
+                  <tr>
+                  
+                    <td align="start">1External Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="External Mark" required  ngModel name="emark1" id="dep"  [(ngModel)]="external1"></td>
+                   
+                  </tr>
+  
+                  <br>
+                  <tr hidden>
+                  
+                    <td align="start">1Total Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="tmark1" id="dep"  [(ngModel)]="total1"></td>
+                   
+                  </tr>
+  
+               
+
+
+                  <tr hidden>
+                  
+                    <td align="start">1Grade</td>
+                    <td align="start">:</td>
+                    <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="grade1" id="dep"  [(ngModel)]="grade1"></td>
+                   
+                  </tr>
+
+                  <br>
+
+                  <tr>
+                
+                    <td align="start">Subject II </td>
+                    <td align="start">:</td>
+                    <td><select class="form-select form-control" aria-label="Default select example" required  ngModel name="sub2" id="code" >
+
+                      <option value="" disabled selected>Select</option>
+             
+                    <option *ngFor="let s of sub" >{{s}}</option>
+                    
+                     
+                     
+                    </select></td>
+                   
+                  </tr>
+
+                  <br>
+  
+                  
+  
+                  <tr>
+                  
+                    <td align="start">2Internal Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Internal Mark" required  ngModel name="imark2" id="dep"  [(ngModel)]="internal2"></td>
+                   
+                  </tr>
+  
+                  <br>
+
+                  <tr>
+                  
+                    <td align="start">2External Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="External Mark" required  ngModel name="emark2" id="dep"  [(ngModel)]="external2"></td>
+                   
+                  </tr>
+  
+                  <br>
+                  <tr hidden>
+                  
+                    <td align="start">2Total Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="tmark2" id="dep"  [(ngModel)]="total2"></td>
+                   
+                  </tr>
+  
+                  <br>
+
+
+                  <tr hidden>
+                  
+                    <td align="start">2Grade</td>
+                    <td align="start">:</td>
+                    <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="grade2" id="dep"  [(ngModel)]="grade2"></td>
+                   
+                  </tr>
+
+                  <br>
+
+
+                  <tr>
+                
+                    <td align="start">Subject III</td>
+                    <td align="start">:</td>
+                    <td><select class="form-select form-control" aria-label="Default select example" required  ngModel name="sub3" id="code" >
+
+                      <option value="" disabled selected>Select</option>
+             
+                    <option *ngFor="let s of sub" >{{s}}</option>
+                    
+                     
+                     
+                    </select></td>
+                   
+                  </tr>
+
+                  <br>
+
+           
+  
+                  
+  
+                  <tr>
+                  
+                    <td align="start">3Internal Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Internal Mark" required  ngModel name="imark3" id="dep"  [(ngModel)]="internal3"></td>
+                   
+                  </tr>
+  
+                  <br>
+
+                  <tr>
+                  
+                    <td align="start">3External Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="External Mark" required  ngModel name="emark3" id="dep"  [(ngModel)]="external3"></td>
+                   
+                  </tr>
+  
+                  <br>
+                  <tr hidden>
+                  
+                    <td align="start">3Total Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="tmark3" id="dep"  [(ngModel)]="total3"></td>
+                   
+                  </tr>
+  
+                  <br>
+
+
+                  <tr hidden>
+                  
+                    <td align="start">3Grade</td>
+                    <td align="start">:</td>
+                    <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="grade3" id="dep"  [(ngModel)]="grade3"></td>
+                   
+                  </tr>
+
+                  <br>
+
+                  <tr>
+                
+                    <td align="start">Subject IV </td>
+                    <td align="start">:</td>
+                    <td><select class="form-select form-control" aria-label="Default select example" required  ngModel name="sub4" id="code" >
+
+                      <option value="" disabled selected>Select</option>
+             
+                    <option *ngFor="let s of sub" >{{s}}</option>
+                    
+                     
+                     
+                    </select></td>
+                   
+                  </tr>
+
+                  <br>
+
+               
+  
+                  
+  
+                  <tr>
+                  
+                    <td align="start">4Internal Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Internal Mark" required  ngModel name="imark4" id="dep"  [(ngModel)]="internal4"></td>
+                   
+                  </tr>
+  
+                  <br>
+
+                  <tr>
+                  
+                    <td align="start">4External Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="External Mark" required  ngModel name="emark4" id="dep"  [(ngModel)]="external4"></td>
+                   
+                  </tr>
+  
+                  <br>
+                  <tr hidden>
+                  
+                    <td align="start">4Total Mark</td>
+                    <td align="start">:</td>
+                    <td><input type="number" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="tmark4" id="dep"  [(ngModel)]="total4"></td>
+                   
+                  </tr>
+  
+                  <br>
+
+
+                  <tr hidden>
+                  
+                    <td align="start">4Grade</td>
+                    <td align="start">:</td>
+                    <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="grade4" id="dep"  [(ngModel)]="grade4"></td>
+                   
+                  </tr>
+                  
+  
+                  
+  
+                  
+  
+                 
+  
+  
+  
+                  
+                 
+                </tbody>
+  
+               
+  
+  
+  
+  
+              </table>
+  
+              <div class="pt-3 text-center" align="center" >
+                     
+                <button  class=" btn kukku-usreg-ex-btn"  type="submit" (click)="sum()">Register</button> 
+              </div>
+  
+            </form>        
+    
+            </div>
+              
+          
+          
+              
+          
+              
+          
+             
+            </div>
+          
+          
+          </div>
+          </section>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

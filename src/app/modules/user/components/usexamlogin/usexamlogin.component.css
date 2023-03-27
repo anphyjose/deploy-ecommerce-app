@@ -1,0 +1,600 @@
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+.header-bg{
+	background-color: #1d262d;
+}
+
+.nav-item a{
+	color: white;
+    
+
+}
+.nav-item :hover{
+	color: white;
+
+}
+.nav-item :focus{
+	color: white;
+
+}
+.navbar-toggler-icon{
+	color: white;
+}
+.kukkies{
+	padding-left: 5rem 
+}
+.navbar{
+	float: right;
+}
+
+.rounded-circle{
+	background-color:  #1d262d;
+	border: 0.1em solid  #1d262d;
+}
+.card{
+	border: none;
+	
+}
+.kukku-ac{
+	width: 100%;
+}
+
+.card-text{
+	
+	text-align: justify;
+}
+
+	
+	
+
+
+.kukku-ad{
+	background-color: whitesmoke;
+	/*border: 0.1em solid dimgray;*/
+	border-radius: 0.6em;
+}
+
+.kukku-float{
+	float: left;
+}
+.progress-bar{
+	text-align: right;
+}
+
+/*.kukku-thumb{
+    padding-left: 4.5rem;
+}*/
+.kukku-font{
+	font-family: sans-serif;
+	color: #374957;;
+	
+	
+}
+.fa{
+	font-size: 4em;
+}
+
+.kukku-fa{
+	font-size: 2em;
+	color: darkred
+}
+.kukku-fa:hover{
+	font-size: 2.1em;
+	color: darkgreen;
+}
+.kukku-academic{
+	font-size: 2em;
+	font-weight: 600;
+	color: black;
+}
+.kukku-present{
+	font-size: 1em;
+	font-weight: 600;
+	color: dimgrey;
+}
+
+.kukku-lorem{
+	font-size: 0.5em;
+	color: dimgrey;
+	
+}
+.shadow-lg{
+	text-align: justify;
+}
+.kukku-service-hd{
+	color: ghostwhite;
+}
+
+.kukku-service-p{
+	color: #ebe7e7
+}
+.kukku-work-row{
+
+	margin-right: 5rem;
+
+}
+
+.kukku-jq{
+
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.20);
+}
+.kukku-soft{
+	padding-left: 7rem;
+}
+.kukku-fab{
+	font-size: 6em;
+	text-align: center;
+	color:#bdbdbd;
+}
+.kukku-fab:hover{
+	
+	text-align: center;
+	color:#faf9ff;
+}
+
+.kukku-nhd{
+	font-size: 1.5em;
+	color: #1d262d;
+}
+.kukku-form{
+	border: 0.1em solid #dbd8d8;
+}
+
+.kukku-ficon{
+	font-size: 2em;
+	color: whitesmoke;
+}
+.kukku-fright{
+	font-size: 0.9em;
+	color: #a1a5a1;
+	line-height: 2em;
+}
+.kukku-about-icon{
+	color:#2b3a46;
+	
+	
+}
+.kukku-about-icon:hover{
+	color:#ffbe29;
+	
+	
+}
+
+.kukku-work-a{
+
+	text-decoration: none;
+	color:  #1d262d;
+
+}
+.kukku-work-a:hover{
+	color:#e1ad37;
+}
+
+.kukku-bar{
+	background-color: indigo;
+}
+
+.kukku-cv{
+  background-color: #1d262d;
+  color: white;
+}
+.kukku-utton-carousel{
+	color: #1d262d;
+	background-color: #1d262d;
+}
+.carousel-indicators{
+	z-index: 1;
+}
+
+
+/* #new */
+
+
+
+.k-nav{
+    
+    font-size: 1.2rem;
+}
+.k-search{
+    padding-top: 0rem;
+    padding-right: 0rem;
+}
+
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff
+
+}
+
+.k-navb{
+	position: relative;
+	right: 2rem;
+}
+.k-navul li{
+	margin: 0;
+	position: relative;
+	right: 2rem;
+	top: 2rem;
+}
+
+.navbar{
+	float: none;
+}
+
+
+
+.k-colpic {
+	text-align: center;
+	
+	background-color: whitesmoke;
+}
+.k-colbox div{
+	text-align: center;
+	
+	background-color: #e9ecef;
+}
+.k-pic-img img{
+	width: 80%;
+	
+}
+.fhw{
+	font-size: 110%;
+}
+.figure-caption{
+	color: #5a072e;
+}
+.k-colport {
+	text-align: center;
+	
+}
+
+
+.figure a{
+	color: #5a072e;
+	text-decoration-line: none;
+}
+.figure a:hover{
+	
+    color: #2b3a46;
+}
+
+/* #about */
+.kukku-about-box{
+	background-color:  whitesmoke;
+	;
+}
+.kukku-about {
+ width: 85%;
+ text-align: justify;
+ background-color: white;
+}
+.lead{
+	font-weight: 500;
+	padding-bottom: 2.5rem;
+}
+
+.kukku-about h4{
+ font-size: 2.0rem;
+}
+.kukku-about h5{
+	font-weight: 700;
+	color: #1d262d;
+}
+
+.kukku-about p{
+	color: #4a4848;
+}
+.kukku-about b{
+	color: #1d262d;
+}
+
+/* #academics */
+
+/* #contacts */
+
+.form-control, .is-valid{
+    background-image: none;
+	border-color: #1d262d;
+}
+.form-control, .is-invalid{
+    background-image: none;
+	border-color: #1d262d;
+}
+.form-select, .is-valid{
+    background-image: none;
+	border-color: #1d262d;
+}
+.k-btn-formm{
+	border-color: #1d262d;
+	background-color: #1d262d;
+color: white;}
+
+.input-group-text{
+	border-color: #1d262d;
+}
+
+/* #adminport */
+
+.kukku-adport-box{
+    background-color:  whitesmoke;
+	text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+
+}
+.kukku-adport-content{
+    background-color: white;
+    width: 75%;
+}
+.kukku-adport-h1{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.kukku-adport-pdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.kukku-adport-pdivp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/../../assets/img/studentLog.jpg)  0px 0px  no-repeat ;
+  background-size:0% ;
+
+}
+
+
+.kil{
+
+  position: absolute;
+  right: 0px;
+}
+.kukku-adport-para{
+    
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #585858;
+    line-height:1.8rem;
+    width: 90%;
+   
+}
+.kukku-adport-login{
+    width: 75%;
+}
+.kukku-adport-login input{
+    outline: none;
+    border: none;
+
+}
+.kukku-adport-login-div{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px
+}
+.kukku-adport-login-div-pass{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kukku-adport-login-btn{
+    background-color: #1d262d;
+    color: white;
+}
+
+
+/* user admission logpage */
+
+.kukku-adport-content{
+    background-color: white;
+    width: 75%;
+}
+
+.kukku-usadm{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 5rem;
+	
+	
+}
+
+.kukku-usadm-login{
+    width: 75%;
+	
+}
+.kukku-usadm-login input{
+    outline: none;
+    border: none;
+
+}
+.kukku-usadm-login-div{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px
+}
+.kukku-usadm-login-div-pass{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px)
+{
+	.kukku-usadm-login{
+		width: 100%;
+		
+	}
+
+	.kukku-adport-content{
+		width: 100%;
+	}
+  .kukku-adport-login {
+    width: 100%;
+    
+}
+}
+
+.kukku-usadam-tabledata{
+	font-size: larger;
+}
+.kukku-usadam-table{
+	width: 100%;
+}
+
+
+
+/* import */
+
+
+
+
+
+
+
+
+.kukku-form {
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.kukku-form form .title{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+.kukku-form form .title:before{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+.kukku-form form .input-box{
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+.kukku-form form .input-box input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+.kukku-form form .underline::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.kukku-form form .underline::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.kukku-form form .input-box input:focus ~ .underline::after,
+.kukku-form form .input-box input:valid ~ .underline::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.kukku-form form .button{
+  margin: 40px 0 20px 0;
+}
+.kukku-form .input-box input[type="submit"]{
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.kukku-form .input-box input[type="submit"]:hover{
+  letter-spacing: 1px;
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+.kukku-form .option{
+  font-size: 14px;
+  text-align: center;
+}
+.kukku-form .facebook a,
+.kukku-form .twitter a{
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.kukku-form .facebook i,
+.kukku-form .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+}
+.kukku-form .twitter a{
+  background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.kukku-form .twitter a:hover{
+  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.kukku-form .facebook a{
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+.kukku-form .facebook a:hover{
+  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+
+::ng-deep .mat-mdc-tab-body .mat-mdc-tab-body-content{
+  height: auto;
+  overflow: hidden;
+ 
+}
+.k-eye-btn span{
+  position: absolute;
+    top: auto;
+    left: 90%;
+    
+
+}

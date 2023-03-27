@@ -1,0 +1,190 @@
+
+
+<div class="">
+
+
+   
+
+    <section class="">
+        <div class="  kukku-about-box ">
+          
+    <div class=" k-colpic ">
+    
+      <div class="mx-auto d-block ">
+  
+        <img src="assets\img\collegeContact.jpg" alt="" class="img-fluid " width="100%">
+      </div>
+    </div>
+   <div class="pt-5 pb-5">
+          <div class=" pt-5 mx-auto kukku-about">
+
+           
+
+
+            <form class="row g-3 p-3"  #form="ngForm" (onSubmit)="form.valid" >
+
+              
+                <div class="col-md-6">
+                  <label for="validationServer01" class="form-label">First name</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer01" value="" required="" required name="fname" #fname="ngModel" [(ngModel)]="formData.fname">
+                  <div class="invalid-feedback" *ngIf="form.submitted&&fname.errors?.['required']">
+                    First Name is Required.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationServer02" class="form-label">Last name</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer02" value="" required="" required name="lname" #lname="ngModel" [(ngModel)]="formData.lname" >
+                  <div class="invalid-feedback" *ngIf="form.submitted&&lname.errors?.['required']">
+                    Last Name is Required.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServerUsername" class="form-label">Email ID</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required="" required name="email" #email="ngModel" [(ngModel)]="formData.email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback" *ngIf="form.submitted&&email.errors?.['required']">
+                    Please Provide a Valid Email.
+                    </div>
+                    <div id="validationServer03Feedback" class="invalid-feedback" *ngIf="form.submitted&&email.errors?.['pattern']">
+                      In Valid Email Info.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer03" class="form-label">Phone No</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required="" required name="phno" #phno="ngModel" [(ngModel)]="formData.phno" pattern="^((\\+91-?)|0)?[0-9]{10}$">
+                  <div id="validationServer03Feedback" class="invalid-feedback" *ngIf="form.submitted&&phno.errors?.['required']">
+                    Please Provide a Valid Mobile No.
+                  </div>
+                  <div id="validationServer03Feedback" class="invalid-feedback" *ngIf="form.submitted&&phno.errors?.['pattern']">
+                    In Valid Mobile No.
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                    <label for="validationServer04" class="form-label">Subject</label>
+                    <select class="form-select valid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+                      <option selected="" disabled="" value="">Choose...</option>
+                      <option>Admission</option>
+                      <option>Enquiry</option>
+                      <option>Placement Cell</option>
+                      <option>Faculty </option>
+
+                    </select>
+                    <div id="validationServer04Feedback" class="invalid-feedback">
+                      Please select a valid subject.
+                    </div>
+                  </div>
+                <div class="col-md-12">
+                <label for="validationServer05" class="form-label">Message</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required="" style="height: 100%;">
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                  
+                </div>
+              </div>
+                <div class="col-12 pt-5">
+                  <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required="" >
+                    <label class="form-check-label" for="invalidCheck3">
+                      Agree to terms and conditions
+                    </label>
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn k-btn-formm" type="submit" [disabled]="!form.valid"  (click)="form.reset();kk()" routerLink="/co">Send</button>
+                </div>
+              </form>
+
+              
+
+
+
+        </div>
+      </div>   
+      
+        
+      </div>
+      
+      </section>
+
+
+
+
+      <!-- <form class="row g-3 p-3"  #form="ngForm" (onSubmit)="form.valid">
+
+              
+        <div class="col-md-6">
+          <label for="validationServer01" class="form-label">First name</label>
+          <input type="text" class="form-control is-valid" id="validationServer01" value="" required="" required name="fname" #fname="ngModel" [(ngModel)]="formData.fname">
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" value="" required="">
+          <div class="valid-feedback">
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Email ID</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required="">
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+            Please provide a valid Email.
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer03" class="form-label">Phone No</label>
+          <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required="">
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid Mobile No.
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+            <label for="validationServer04" class="form-label">Subject</label>
+            <select class="form-select valid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+              <option selected="" disabled="" value="">Choose...</option>
+              <option>Admission</option>
+              <option>Enquiry</option>
+              <option>Placement Cell</option>
+              <option>Faculty </option>
+
+            </select>
+            <div id="validationServer04Feedback" class="invalid-feedback">
+              Please select a valid subject.
+            </div>
+          </div>
+        <div class="col-md-12">
+        <label for="validationServer05" class="form-label">Message</label>
+        <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required="" style="height: 100%;">
+        <div id="validationServer05Feedback" class="invalid-feedback">
+          
+        </div>
+      </div>
+        <div class="col-12 pt-5">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required="" >
+            <label class="form-check-label" for="invalidCheck3">
+              Agree to terms and conditions
+            </label>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn k-btn-formm" type="submit">Send</button>
+        </div>
+      </form> -->
+
+
+</div>

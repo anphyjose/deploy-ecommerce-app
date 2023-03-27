@@ -1,0 +1,138 @@
+<div class="container-fluid">
+
+    <div class="row kukku-adport-box"   >
+
+        <div class="kukku-adport-content card text-cente " id="kk" >
+
+
+<div  class="k-bg p-3">
+        
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" >
+
+
+    <mat-tab label="Registration" >
+
+        
+        <div class="text-center kukku-usadm ">
+        
+                     
+        
+            <div class=" pt-3  ">
+        
+                <h3 class="pb-3" style="color: #0e5c05;">NEW APPLICANT? </h3>
+                <h5 class="pb-3" style="color: #465844;">APPLY ONLINE </h5>
+              
+                <div class="card-body text-center kukku-usadam-table">
+        
+                    <table class="table table-borderless kukku-usadam-tabledata  text-center" align="center"  >
+        
+                        <tr>
+                            <td align="right" class="p-0">
+                                <span class="material-icons m-r-5 text-success">done_outline</span>
+                            </td>
+        
+                            <td align="left" class="p-0" > Register with your email ID &amp; Phone Number </td>
+                        </tr>
+        
+                        <tr>
+                            <td align="right"  class="p-0">
+                                <span class="material-icons m-r-5 text-success">done_outline</span>
+                            </td>
+                            
+                            <td align="left" class="p-0" >Login with the credentials which is sent to your Email/SMS
+                            </td>
+                        </tr>
+        
+                        <tr><td align="right"class="p-0">
+                            <span class="material-icons m-r-5 text-success">done_outline</span>
+                        </td>
+                        <td align="left" class="p-0" >Login with the credentials which is sent to your Email/SMS
+                        </td>
+                        </tr>
+        
+                        <tr><td align="right" class="p-0">
+                            <span class="material-icons m-r-5 text-success">done_outline</span>
+                        </td>
+                        <td align="left" class="p-0" >Confirm and submit the form</td>
+                        </tr>
+        
+                        <tr>
+                            <td colspan="2" align="left" class="p-3">
+                                <button type="submit" class="btn kukku-adport-login-btn "  routerLink="/us/uar">Register</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+               
+            </div>
+        
+        </div> 
+    
+    
+    </mat-tab>
+
+
+
+    
+
+
+    <mat-tab label="Login">
+        
+        
+ <div class="text-center kukku-usadm">
+
+             
+
+    <div class="kukku-usadm-login pt-3">
+
+        <h3 class="pb-3" style="color: #0e5c05;">REGISTERED APPLICANT?</h3>
+        <h5 class="pb-5" style="color: #465844;">LOGIN HERE</h5>
+
+        <form [formGroup]="login" (ngSubmit)="kukkulodIn(login)">
+            <div class=" kukku-usadm-login-div pt-3">
+
+              <input type="email" class="kform"  aria-describedby="emailHelp" placeholder="NAME" formControlName="fname">
+             
+            </div>
+            <div class="mb-3 kukku-usadm-login-div kukku-usadm-login-div-pass">
+             
+              <input type="password" class="kform" id="exampleInputPassword1" placeholder="CAP ID" [type]="hide ? 'password' : 'text'" formControlName="id" [(ngModel)]="loginId">
+              <span class="" id="inputGroupPrepend3"><button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button></span>
+              
+              
+            </div>
+
+            <div class="pt-3 " style="float: left;"> 
+           
+                <button type="submit" class="btn kukku-adport-login-btn mb-3 " >Login</button>
+                <!-- <button type="" class="btn kukku-adport-login-btn mb-3 " routerLink="/us/ua/ual">Login ual</button> -->
+            </div>
+           
+            
+          </form>
+
+         
+    </div>
+
+</div>
+
+    </mat-tab>
+
+
+
+   
+    
+  </mat-tab-group>
+
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+

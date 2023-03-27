@@ -1,0 +1,146 @@
+
+
+
+<!-- 
+<form #kukkuform='ngForm' (ngSubmit)="onSubmite(kukkuform.value)">
+    ID:<br /> <input type="text" ngModel name="id" id="id"><br /><br />
+    Name:<br /> <input type="text" ngModel name="name" id="name"><br /><br />
+    Mark:<br /> <input type="text" ngModel name="mark" id="mark"><br /><br />
+    <input class="bg-primary btn text-light " type="submit"  value="submit">
+    </form> -->
+
+
+
+
+    
+
+    <div class="container-fluid">
+
+      <section class="pb-5">
+      
+          <div class=" ">
+              <div class="k-ad-reg-page text-center ">
+                <img class="img-fluid " src="assets\img\CollegeLogoBW.png" alt="" width="160px" height="206px">
+                  <h3 class="pt-3 ">Exam Registration</h3>
+              </div>
+  
+              
+            
+          <div class="p-5 mx-auto k-admission-colbox text-center ">
+
+            
+  
+              
+          <div class="table-responsive ">
+  
+ 
+            <form action=""  #kukkuform='ngForm' (ngSubmit)="kukkuform.valid&&onSubmite(kukkuform.value)">
+
+            <table class="table">
+             
+              <tbody class="k-table-uex-reg">
+                <br>
+                <br>
+                <tr>
+                
+                  <td align="start">Registration No</td>
+                  <td align="start">:</td>
+                  <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="id" id="id"></td>
+                 
+                </tr>
+                <br>
+
+                <tr>
+                
+                  <td align="start">Name</td>
+                  <td align="start">:</td>
+                  <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="name" id="name"></td>
+                 
+                </tr>
+                <br>
+
+                <tr>
+                
+                  <td align="start">Date Of Birth </td>
+                  <td align="start">:</td>
+                  <td><input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="dob" id="dob"></td>
+                 
+                </tr>
+                <br>
+
+                
+
+                <tr>
+                
+                  <td align="start">Department</td>
+                  <td align="start">:</td>
+                  <td><input  matInput  pattern="[a-zA-Z ]*" type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required  ngModel name="dep" id="dep" ></td>
+                 
+                </tr>
+
+                <br>
+                
+
+                <tr>
+                
+                  <td align="start">Exam Code </td>
+                  <td align="start">:</td>
+                  <td><select class=" form-control form-select" aria-label="Default select example" required  ngModel name="code" id="code" >
+           
+                    <option >Choose</option>
+                    <option    *ngFor="let data of exam" >{{data.ti}}</option>
+                   
+                  </select></td>
+                 
+                </tr>
+
+                
+
+               
+
+
+
+                
+               
+              </tbody>
+
+             
+
+
+
+
+            </table>
+
+            <div class="pt-3 text-center" align="center" >
+                   
+              <button  class=" btn kukku-usreg-ex-btn"  type="submit">Register</button> 
+            </div>
+
+          </form>        
+  
+          </div>
+            
+        
+        
+            
+        
+            
+        
+           
+          </div>
+        
+        
+        </div>
+        </section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,401 @@
+
+<div class="container-fluid">
+
+
+
+    <div class="row">
+
+      <div class="k-ad-reg-page text-center pt-3">
+        <img class="img-fluid pt-3" src="assets\img\CollegeLogoBW.png" alt="" width="128px" height="165px">
+        
+        <h2 class=" pt-3 text-center p-5" style="color: #830202;"> Admission Rank List</h2>
+    </div>
+
+
+        <div class=" mx-auto kukku-list-cont pb-5 text-center">
+        
+        
+        
+            
+            
+
+            
+
+           
+
+            <mat-accordion class="p-5">
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header >
+                  <mat-panel-title >
+                    <h5 class=" pt-2">BA English</h5>
+                  </mat-panel-title>
+                  
+                </mat-expansion-panel-header>
+
+
+
+                <div class="table-responsive k-ad-lo-taBlele">
+                  <table class="table table-hover" >
+                      
+                      <thead class="p-5">
+                          <tr class="p-5">
+                              
+                              <th>RANK</th>
+                              <th>NAME</th>
+                              <th>REG NO</th>
+                              <th>INDEX POINET</th>
+                              
+                              
+                          </tr>
+                      </thead>
+                     
+                      <tbody class="p-5" >
+                          <ng-container *ngFor="let data of reg  | sortItem: 'desc':'mark'| search: baEng; let i=index;" >
+                          <tr>
+                              <td>{{i+1}}</td> 
+                              <td>{{data.fname}}</td> 
+                              <td>{{data.id }}</td>
+                              <td>{{data.mark}}</td>
+                             
+                              
+                               
+                          </tr>
+  
+                         
+                      </ng-container>
+                     
+                      </tbody>
+                  </table>
+                                 
+  
+  
+  
+      
+              </div>
+              
+
+              
+
+              </mat-expansion-panel>
+              
+            </mat-accordion>
+
+
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <h5 class="h5 pt-2">BA Economics</h5>
+                  </mat-panel-title>
+                  
+                </mat-expansion-panel-header>
+
+
+                <div class="table-responsive k-ad-lo-taBlele">
+                  <table class="table table-hover" >
+                      
+                      <thead class="p-5">
+                          <tr class="p-5">
+                              
+                              <th>RANK</th>
+                              <th>NAME</th>
+                              <th>ID</th>
+                              <th>INDEX POINET</th>
+                              
+                              
+                          </tr>
+                      </thead>
+                     
+                      <tbody class="p-5" >
+                          <ng-container *ngFor="let data of reg  | sortItem: 'desc':'mark'| search: baEco; let i=index;" >
+                          <tr>
+                              <td>{{i+1}}</td> 
+                              <td>{{data.fname}}</td> 
+                              <td>{{data.id }}</td>
+                              <td>{{data.mark}}</td>
+                             
+                              
+                               
+                          </tr>
+  
+                         
+                      </ng-container>
+                     
+                      </tbody>
+                  </table>
+                                 
+  
+  
+  
+      
+              </div>
+
+              
+                
+         
+
+              </mat-expansion-panel>
+              
+            </mat-accordion>
+
+
+            <mat-accordion class="p-5">
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <h5 class="h5 pt-2">BSC Mathematics</h5>
+                  </mat-panel-title>
+                  
+                </mat-expansion-panel-header>
+
+
+                <div class="table-responsive k-ad-lo-taBlele">
+                  <table class="table table-hover" >
+                      
+                      <thead class="p-5">
+                          <tr class="p-5">
+                              
+                              <th>RANK</th>
+                              <th>NAME</th>
+                              <th>ID</th>
+                              <th>INDEX POINET</th>
+                              
+                              
+                          </tr>
+                      </thead>
+                     
+                      <tbody class="p-5" >
+                          <ng-container *ngFor="let data of reg  | sortItem: 'desc':'mark'| search: bscMath; let i=index;" >
+                          <tr>
+                              <td>{{i+1}}</td> 
+                              <td>{{data.fname}}</td> 
+                              <td>{{data.id }}</td>
+                              <td>{{data.mark}}</td>
+                             
+                              
+                               
+                          </tr>
+  
+                         
+                      </ng-container>
+                     
+                      </tbody>
+                  </table>
+                                 
+  
+  
+  
+      
+              </div>
+
+              
+                
+         
+
+              </mat-expansion-panel>
+              
+            </mat-accordion>
+
+            <mat-accordion class="p-5">
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <h5 class="h5 pt-2">BSC Physics</h5>
+                  </mat-panel-title>
+                  
+                </mat-expansion-panel-header>
+
+
+                <div class="table-responsive k-ad-lo-taBlele">
+                  <table class="table table-hover" >
+                      
+                      <thead class="p-5">
+                          <tr class="p-5">
+                              
+                              <th>RANK</th>
+                              <th>NAME</th>
+                              <th>ID</th>
+                              <th>INDEX POINET</th>
+                              
+                              
+                          </tr>
+                      </thead>
+                     
+                      <tbody class="p-5" >
+                          <ng-container *ngFor="let data of reg  | sortItem: 'desc':'mark'| search: bscPhy; let i=index;" >
+                          <tr>
+                              <td>{{i+1}}</td> 
+                              <td>{{data.fname}}</td> 
+                              <td>{{data.id }}</td>
+                              <td>{{data.mark}}</td>
+                             
+                              
+                               
+                          </tr>
+  
+                         
+                      </ng-container>
+                     
+                      </tbody>
+                  </table>
+                                 
+  
+  
+  
+      
+              </div>
+
+              
+                
+         
+
+              </mat-expansion-panel>
+              
+            </mat-accordion>
+
+            <mat-accordion class="p-5">
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <h5 class="h5 pt-2">BCOM Finance</h5>
+                  </mat-panel-title>
+                  
+                </mat-expansion-panel-header>
+
+
+                <div class="table-responsive k-ad-lo-taBlele">
+                  <table class="table table-hover" >
+                      
+                      <thead class="p-5">
+                          <tr class="p-5">
+                              
+                              <th>RANK</th>
+                              <th>NAME</th>
+                              <th>ID</th>
+                              <th>INDEX POINET</th>
+                              
+                              
+                          </tr>
+                      </thead>
+                     
+                      <tbody class="p-5" >
+                          <ng-container *ngFor="let data of reg  | sortItem: 'desc':'mark'| search: bcomF; let i=index;" >
+                          <tr>
+                              <td>{{i+1}}</td> 
+                              <td>{{data.fname}}</td> 
+                              <td>{{data.id }}</td>
+                              <td>{{data.mark}}</td>
+                             
+                              
+                               
+                          </tr>
+  
+                         
+                      </ng-container>
+                     
+                      </tbody>
+                  </table>
+                                 
+  
+  
+  
+      
+              </div>
+
+              
+                
+         
+
+              </mat-expansion-panel>
+              
+            </mat-accordion>
+
+            <mat-accordion class="p-5">
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <h5 class="h5 pt-2">BCOM Cooperation</h5>
+                  </mat-panel-title>
+                  
+                </mat-expansion-panel-header>
+
+
+                <div class="table-responsive k-ad-lo-taBlele">
+                  <table class="table table-hover" >
+                      
+                      <thead class="p-5">
+                          <tr class="p-5">
+                              
+                              <th>RANK</th>
+                              <th>NAME</th>
+                              <th>ID</th>
+                              <th>INDEX POINET</th>
+                              
+                              
+                          </tr>
+                      </thead>
+                     
+                      <tbody class="p-5" >
+                          <ng-container *ngFor="let data of reg  | sortItem: 'desc':'mark'| search: bcomCo; let i=index;" >
+                          <tr>
+                              <td>{{i+1}}</td> 
+                              <td>{{data.fname}}</td> 
+                              <td>{{data.id }}</td>
+                              <td>{{data.mark}}</td>
+                             
+                              
+                               
+                          </tr>
+  
+                         
+                      </ng-container>
+                     
+                      </tbody>
+                  </table>
+                                 
+  
+  
+  
+      
+              </div>
+
+              
+                
+         
+
+              </mat-expansion-panel>
+              
+            </mat-accordion>
+
+
+
+
+           
+
+         </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

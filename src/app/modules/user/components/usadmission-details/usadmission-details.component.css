@@ -1,0 +1,688 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+.header-bg{
+	background-color: #1d262d;
+}
+
+.nav-item a{
+	color: white;
+    
+
+}
+.nav-item :hover{
+	color: white;
+
+}
+.nav-item :focus{
+	color: white;
+
+}
+.navbar-toggler-icon{
+	color: white;
+}
+.kukkies{
+	padding-left: 5rem 
+}
+.navbar{
+	float: right;
+}
+
+.rounded-circle{
+	background-color:  #1d262d;
+	border: 0.1em solid  #1d262d;
+}
+.card{
+	border: none;
+	
+}
+.kukku-ac{
+	width: 100%;
+}
+
+.card-text{
+	
+	text-align: justify;
+}
+
+	
+	
+
+
+.kukku-ad{
+	background-color: whitesmoke;
+	/*border: 0.1em solid dimgray;*/
+	border-radius: 0.6em;
+}
+
+.kukku-float{
+	float: left;
+}
+.progress-bar{
+	text-align: right;
+}
+
+/*.kukku-thumb{
+    padding-left: 4.5rem;
+}*/
+.kukku-font{
+	font-family: sans-serif;
+	color: #374957;;
+	
+	
+}
+.fa{
+	font-size: 4em;
+}
+
+.kukku-fa{
+	font-size: 2em;
+	color: darkred
+}
+.kukku-fa:hover{
+	font-size: 2.1em;
+	color: darkgreen;
+}
+.kukku-academic{
+	font-size: 2em;
+	font-weight: 600;
+	color: black;
+}
+.kukku-present{
+	font-size: 1em;
+	font-weight: 600;
+	color: dimgrey;
+}
+
+.kukku-lorem{
+	font-size: 0.5em;
+	color: dimgrey;
+	
+}
+.shadow-lg{
+	text-align: justify;
+}
+.kukku-service-hd{
+	color: ghostwhite;
+}
+
+.kukku-service-p{
+	color: #ebe7e7
+}
+.kukku-work-row{
+
+	margin-right: 5rem;
+
+}
+
+.kukku-jq{
+
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.20);
+}
+.kukku-soft{
+	padding-left: 7rem;
+}
+.kukku-fab{
+	font-size: 6em;
+	text-align: center;
+	color:#bdbdbd;
+}
+.kukku-fab:hover{
+	
+	text-align: center;
+	color:#faf9ff;
+}
+
+.kukku-nhd{
+	font-size: 1.5em;
+	color: #1d262d;
+}
+.kukku-form{
+	border: 0.1em solid #dbd8d8;
+}
+
+.kukku-ficon{
+	font-size: 2em;
+	color: whitesmoke;
+}
+.kukku-fright{
+	font-size: 0.9em;
+	color: #a1a5a1;
+	line-height: 2em;
+}
+.kukku-about-icon{
+	color:#2b3a46;
+	
+	
+}
+.kukku-about-icon:hover{
+	color:#ffbe29;
+	
+	
+}
+
+.kukku-work-a{
+
+	text-decoration: none;
+	color:  #1d262d;
+
+}
+.kukku-work-a:hover{
+	color:#e1ad37;
+}
+
+.kukku-bar{
+	background-color: indigo;
+}
+
+.kukku-cv{
+  background-color: #1d262d;
+  color: white;
+}
+.kukku-utton-carousel{
+	color: #1d262d;
+	background-color: #1d262d;
+}
+.carousel-indicators{
+	z-index: 1;
+}
+
+
+/* #new */
+
+
+
+.k-nav{
+    
+    font-size: 1.2rem;
+}
+.k-search{
+    padding-top: 0rem;
+    padding-right: 0rem;
+}
+
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff
+
+}
+
+.k-navb{
+	position: relative;
+	right: 2rem;
+}
+.k-navul li{
+	margin: 0;
+	position: relative;
+	right: 2rem;
+	top: 2rem;
+}
+
+.navbar{
+	float: none;
+}
+
+
+
+.k-colpic {
+	text-align: center;
+	
+	background-color: whitesmoke;
+}
+.k-colbox div{
+	text-align: center;
+	
+	background-color: #e9ecef;
+}
+.k-pic-img img{
+	width: 80%;
+	
+}
+.fhw{
+	font-size: 110%;
+}
+.figure-caption{
+	color: #5a072e;
+}
+.k-colport {
+	text-align: center;
+	
+}
+
+
+.figure a{
+	color: #5a072e;
+	text-decoration-line: none;
+}
+.figure a:hover{
+	
+    color: #2b3a46;
+}
+
+/* #about */
+.kukku-about-box{
+	background-color:  whitesmoke;
+	;
+}
+.kukku-about {
+ width: 85%;
+ text-align: justify;
+ background-color: white;
+}
+.lead{
+	font-weight: 500;
+	padding-bottom: 2.5rem;
+}
+
+.kukku-about h4{
+ font-size: 2.0rem;
+}
+.kukku-about h5{
+	font-weight: 700;
+	color: #1d262d;
+}
+
+.kukku-about p{
+	color: #4a4848;
+}
+.kukku-about b{
+	color: #1d262d;
+}
+
+/* #academics */
+
+/* #contacts */
+
+.form-control, .is-valid{
+    background-image: none;
+	border-color: #1d262d;
+}
+.form-control, .is-invalid{
+    background-image: none;
+	border-color: #1d262d;
+}
+.form-select, .is-valid{
+    background-image: none;
+	border-color: #1d262d;
+}
+.k-btn-formm{
+	border-color: #1d262d;
+	background-color: #1d262d;
+color: white;}
+
+.input-group-text{
+	border-color: #1d262d;
+}
+
+/* #adminport */
+
+.kukku-adport-box{
+    background-color:  whitesmoke;
+	text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+}
+.kukku-adport-content{
+    background-color: white;
+    width: 75%;
+}
+.kukku-adport-h1{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.kukku-adport-pdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kukku-adport-para{
+    
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #585858;
+    line-height:1.8rem;
+    width: 90%;
+}
+.kukku-adport-login{
+    width: 75%;
+}
+.kukku-adport-login input{
+    outline: none;
+    border: none;
+
+}
+.kukku-adport-login-div{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 37px
+}
+.kukku-adport-login-div-pass{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kukku-adport-login-btn{
+    background-color: #1d262d;
+    color: white;
+}
+
+
+/* #adminopen */
+
+
+.k-admission-colbox{
+	text-align: center;
+	
+	background-color: #F9F9F6;
+    width: 80%;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.k-course{
+    border: 1px solid #dcdcdc;
+    background-color: #F9F9F6;
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.k-course-a :hover{
+	background-color: #790505;
+	color: #ffffff;
+	
+	
+	
+	
+}
+.k-admission-colbox a{
+	text-decoration: none;
+	color: #1d262d;
+}
+.k-course .fa{
+	font-size: 3.5rem;
+}
+.k-adpage h3{
+	color: #790505;
+}
+.k-adpage{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.k-course div{
+	width: 100%;
+}
+.k-course-a{
+	width: 50%;
+}
+/* media */
+
+
+@media (max-width: 768px)
+{
+.ku-max-course .fa{
+   font-size: 2rem;
+}
+.ku-max-course h5{
+	size: 1rem;
+}
+.k-course{
+    border: 1px solid #dcdcdc;
+    background-color: #F9F9F6;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.k-admission-colbox{
+	text-align: center;
+	
+	background-color: #F9F9F6;
+	width: 100%;
+	padding-top: 5rem;
+}
+}
+
+
+/* admission regopen */
+
+.k-ad-reg-page{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+
+  
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  @media (max-width: 768px){
+    .example-form {
+        min-width: 0px;
+    max-width: 0px;
+       
+      }
+      
+      td {
+        padding-right: 10px;
+      }
+      .mat-stepper-horizontal .mat-stepper-vertical{
+        width: 100%;
+      }
+
+      .mat-step {
+        width: 100%;
+      }
+      .k-admission-colbox .mat-stepper-vertical{
+        width: 100%;
+      }
+  }
+  
+  .mat-stepper-vertical {
+    margin-top: 8px;
+    width: 100%;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+
+  .kukku-use-adReg-btn {
+    background-color: #1d262d;
+    color: white;
+  }
+
+  .kukku-use-adReg-btn:hover{
+	background-color: #151a1d;
+	color: rgb(255 241 241);
+  }
+
+/* admission login */
+
+.k-admission-logBox{
+
+    text-align: center;
+	
+	background-color:#ffffff;
+	
+	padding-top: 5rem;
+}
+
+.k-ad-lo-taBlele  tr {
+    border-color: #f7e1e1;
+    border-style: outset;
+    border-width: 6px;
+    height: 63px;
+    line-height: 50px;
+    color: white;
+    font-size: larger;
+    font-size: larger;
+    font-family: monospace;
+    
+
+}
+.k-ad-lo-taBlele thead{
+background-color: #316457;
+color: #adadad;
+border-color: #f7e1e1;
+border-style: outset;
+border-width: 6px;
+
+}
+
+
+.k-ad-lo-taBlele{
+    background-color: #4e1f38;
+}
+
+
+
+
+
+
+
+
+/* admission-updation */
+
+div{
+	-webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+}
+
+
+
+
+.k-admission-update-Box{
+
+
+    text-align: center;
+	
+	background-color:#edede6;
+	
+	padding-top: 5rem;
+	width: 85%;
+    border-radius: 10px;
+
+
+}
+
+.k-update-click{
+	line-height: 2rem;
+}
+
+.k-update-click ul{
+	list-style: none;
+	line-height: 2rem;
+}
+.k-update-click b:hover{
+	cursor: pointer;
+	color: #5a072e;
+}
+
+.k-update-click span{
+	color:#313131;
+	
+	animation:colorchange 5s infinite alternate;
+}
+
+
+
+ 
+
+  @keyframes colorchange {
+	0% {
+	  
+	  color: rgb(2, 2, 82);
+	}
+	
+	10% {
+	  
+	  color: #360c47;
+	}
+	
+	20% {
+	  
+	  color: #084e40;
+	}
+	
+	30% {
+	  
+	  color: #be6930;
+	}
+	
+	40% {
+	  
+	  color: rgb(28, 28, 107);
+	}
+	
+	50% {
+	  
+	  color: #34495e;
+	}
+	
+	60% {
+	  
+	  color: rgb(34, 34, 92);
+	}
+	
+	70% {
+	  
+	  color: #9b0181;
+	}
+	80% {
+   
+	  color: #bb8900;
+	}
+	
+	90% {
+   
+	  color: #00497a;
+	}
+	
+	100% {
+	  
+	  color: rgb(134, 2, 24);
+	}
+  }
